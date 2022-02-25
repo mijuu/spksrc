@@ -1,6 +1,6 @@
 SPK_NAME = jackett
-SPK_VERS = 0.17.668
-SPK_REV = 14
+SPK_VERS = 0.20.632
+SPK_REV = 15
 SPK_ICON = src/jackett.png
 DSM_UI_DIR = app
 
@@ -33,7 +33,7 @@ include ../../mk/spksrc.archs.mk
 ifeq ($(findstring $(ARCH),$(ARMv5_ARCHS) $(i686_ARCHS) $(ARMv7L_ARCHS)),$(ARCH))
 DEPENDS = cross/curl cross/$(SPK_NAME)-mono
 SERVICE_SETUP = src/service-setup-mono.sh
-CHANGELOG = "Update Jackett 0.17.668"
+CHANGELOG = "Update Jackett 0.20.632"
 LICENSE_FILE = $(WORK_DIR)/Jackett/LICENSE
 SPK_DEPENDS = "mono>3.6"
 endif
